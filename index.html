@@ -11,24 +11,23 @@
   <title>Travelgram | Perfil de viagens</title>
 
   <link rel="stylesheet" href="styles/index.css">
-
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 
 </head>
 <body>
   <div class="bg-surface-color">
-    <nav class="container">
+    <nav class="container py-base flex">
       <a href="#">
         <img src="assets/Logo.svg" alt="Logo">
       </a>
 
-      <ul>
+      <ul class="flex items-center gap-1" role="list">
         <li>
           <a href="#"></a>
           <img src="assets/icons/MagnifyingGlass.svg" alt="Ícone de lupa">
         </li>
-        <li><a href="#">Explorer</a></li>
-        <li><a href="#">Minhas viagens</a></li>
+        <li class="desktop-only"><a href="#">Explorer</a></li>
+        <li class="desktop-only"class="desktop-only"><a href="#">Minhas viagens</a></li>
         <li>
           <a href="#">
             <img src="assets/Profile pic.png" alt="Foto de perfil">
@@ -37,9 +36,8 @@
       </ul>
     </nav>
 
-
     <header>
-      <div class="container">
+      <div class="container even-columns py-lg">
         <div id="profile">
           <img src="assets/Profile pic.png" alt="Foto usuario">
         
@@ -52,7 +50,7 @@
           </div>
         </div>
 
-        <ul id="info">
+        <ul id="info" role="list" class="grid gap-1">
           <li>
             <img src="assets/icons/MapPin.svg" alt="Icone local do mapa">
             <span>São Paulo - Brazil</span>
@@ -71,7 +69,7 @@
     </header>
   </div>
 
-  <main class="container">
+  <main class="container py-base">
     <img src="assets/images/Image 01.png" alt="1">
     <img src="assets/images/Image 02.png" alt="2">
     <img src="assets/images/Image 03.png" alt="3">
@@ -82,18 +80,18 @@
     <img src="assets/images/Image 08.png" alt="8">
     <img src="assets/images/Image 09.png" alt="9">
     <img src="assets/images/Image 10.png" alt="10">
+    <img src="assets/images/Image 11.png" alt="11">
+    <img src="assets/images/Image 12.png" alt="12">
   </main>
 
-  <footer class="container">
+  <footer class="container py-base">
     <span>
       Travelgram &copy; 2024
     </span>
-    <span>
-      Termos de uso
-    </span>
-    <span>
-      Política de privacidade
-    </span>
+    <div class="links">
+      <span>Termos de uso</span>
+      <span>Política de privacidade</span>
+    </div>
   </footer>
 </body>
 </html>

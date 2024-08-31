@@ -1,11 +1,33 @@
 footer {
-  display: flex;
-  gap: 24px;
-  padding-block: 24px;
-
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas: 
+    "logo"
+    "links";
   font: 14px/150% var(--font-family);
+  text-align: center;
+
+  & span:nth-child(1) {
+    grid-area: logo;
+  }
+
+  & .links {
+    grid-area: links;
+    display: flex;
+    justify-content: center;
+    gap: 1rem; /* Espaço entre os links */
+  }
 }
 
-footer span:nth-child(1) {
-  margin-right: auto;
+@media (width >= 80rem){
+  
+  footer{
+    display: flex;
+    gap: 1.5rem;
+
+    & span:nth-child(1) {
+      margin-right: auto;
+    }
+  }
 }

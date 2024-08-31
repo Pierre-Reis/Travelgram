@@ -1,21 +1,16 @@
 nav{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
-nav ul {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  gap: 24px;
+  & ul[role="list"]{
+    margin-left: auto;
+    
+    & img:nth-child(1){
+      width: 2.5rem;
+      object-fit: cover;
+      border-radius: 50%;
+    }
 
-  padding-block: 8px;
-}
-
-nav ul li:last-child img{
-  width: 40px;
-  height: 40px;
-  object-fit: cover;
-  border-radius: 50%;
+    & img:nth-child(2){
+      width: 1.5rem;
+    }
+  }
 }
